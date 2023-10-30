@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .inputs {
+            background-color: white;
+            width: 50vw;
+            height: 12vh;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            border: 2px solid violet;
+            border-radius: 15px;
+            margin-top: 14px;
+        }
+
+        .inputs:hover {
+            background-color: violet;
+            color: white;
+            border-radius: 0px;
+        }
+
+        input {
+            width: 48vw;
+            height: 7vh;
+            margin-left: 7px;
+            border: 2px solid purple;
+            border-radius: 15px;
+        }
+
+        input:hover {
+            border: 4px solid darkred;
+        }
+
+        ul {
+            display: flex;
+            list-style: none;
+
+        }
+
+        a {
+            margin-left: 12px;
+            /* border: 2px solid white;*/
+            border-radius: 25px;
+            font-size: large;
+            color: white;
+            background-color: red;
+            width: 15vw;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            border: 3px solid white;
+            padding: 5px;
+        }
+
+        a:hover {
+            background-color: white;
+            color: red;
+            border: 3px solid darkred;
+        }
+
+        nav {
+            background-color: red;
+            height: 15vh;
+            color: white;
+            font-size: large;
+        }
+
+        button {
+            text-transform: uppercase;
+            border: 3px solid darkblue;
+            background-color: lightcyan;
+            height: 8vh;
+            width: 8vw;
+            margin-left: 20vw;
+            margin-top: 3vh;
+            border-radius: 20px;
+        }
+
+        button:hover {
+            background-color: blue;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>FormToPortfolio
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/form">Form</a></li>
+        </ul>
+    </nav>
+    <form action="/" method="post">
+        <div class="inputs"><label for="name">Your name</label><input type="text" name="name" id="name"></div>
+        <div class="inputs"><label for="address">Your address</label><input type="text" name="address" id="address">
+        </div>
+        <div class="inputs"><label for="date">Your DOB</label><input type="date" name="dob" id="date"></div>
+        <div class="inputs"><label for="contact">Your WhatsApp number</label><input type="number" id="contact"
+                name="contact"></div>
+        <div class="inputs"><label for="skill1">skill1</label><input type="text" name="skill1" id=""></div>
+        <div class="inputs"><label for="skill2">skill2</label><input type="text" name="skill2" id=""></div>
+        <div class="inputs"><label for="skill3">skill3</label><input type="text" name="skill3" id=""></div>
+        <div class="inputs"><label for="blog1head">Blog1</label><input type="text" name="blog1" id=""></div>
+        <div class="inputs"><label for="blog1head">Blog2</label><input type="text" name="blog2" id=""></div>
+        <div class="inputs"><label for="blog1head">Blog3</label><input type="text" name="blog3" id=""></div>
+        <div class="inputs"><label for="blog1head">Blog1 heading</label><input type="textarea" rows="15" column="15"
+                name="blog1head" id=""></div>
+        <div class="inputs"><label for="blog1head">Blog2 heading</label><input type="textarea" rows="15" column="15"
+                name="blog2head" id=""></div>
+        <div class="inputs"><label for="blog1head">Blog2 heading</label><input type="textarea" rows="15" column="15"
+                name="blog3head" id=""></div>
+                <div class="inputs"><label for="quote">Your quote</label><input type="text" name="qoute" id="quote"></div>
+        <button>Submit</button>
+    </form>
+</body>
+
+</html>
